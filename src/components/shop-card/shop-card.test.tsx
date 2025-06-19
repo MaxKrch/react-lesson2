@@ -3,7 +3,7 @@ import ShopCard from "./shop-card";
 import { products } from "../../const/";
 
 describe("Component: ShopCard", () => {
-  test("should render product info correctly", () => {
+  it("should render product info correctly", () => {
     const product = products[0];
     const expectedPrice = `$${product.price}`
     render(<ShopCard product={product} />);

@@ -81,6 +81,7 @@
     height: 300px;
     width: 300px;
     padding: 15px;
+    box-shadow: 1px 1px 3px 1px rgb(125 125 125 / 0.3)
 }
 
 .shop-card-img__container {

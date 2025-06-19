@@ -3,7 +3,7 @@ import ListView from "./list-view";
 import { products } from "../../const/";
 
 describe("ListView", () => {
-  test("should renders correct count ShopItem components", () => {
+  it("should renders correct count ShopItem components", () => {
     render(<ListView products={products} />);
 
     expect(screen.getAllByRole(`listitem`).length).toBe(products.length);

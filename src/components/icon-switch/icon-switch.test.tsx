@@ -10,7 +10,7 @@ describe("Component: IconSwitch", () => {
         onSwitch.mockClear();
     })
 
-    test("should renders correctly", () => {
+    it("should renders correctly", () => {
         render(
             <IconSwitch 
                 icon="view_list" 
@@ -21,7 +21,7 @@ describe("Component: IconSwitch", () => {
         expect(screen.getByRole("button")).toHaveTextContent("view_list");
     });
 
-      test("should handles click", async () => {
+      it("should handles click", async () => {
         render(
             <IconSwitch 
                 icon="view_list" 
