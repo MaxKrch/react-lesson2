@@ -1,16 +1,5 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('./styles/general.css');
 @import url('./styles/filter.css');
 @import url('./styles/layouts.css');
 @import url('./styles/dropdown.css');
-
-ul, ol {
-  list-style-type: none;
-}
-
-#root {
-  max-width: 1280px;
-  min-width: 300px;
-  width: 90%;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}

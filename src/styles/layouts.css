@@ -1,0 +1,174 @@
+.store-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
+
+.icon-switch {
+    height: 35px;
+    width: 35px;
+    font-size: 35px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.icon-switch:hover {
+    color: #A5A5A5;
+}
+
+.product-list {
+    min-width: 300px;
+    width: 90%;
+}
+
+.product-list-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+.product-cards-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card-name {
+    text-transform: uppercase;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.card-color {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-price {
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-button {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    padding: 0;
+    height: 30px;
+    width: 120px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: red;
+}
+
+.card-button:hover {
+    border-color: red;
+}
+
+
+
+.shop-card-container {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    padding: 15px;
+}
+
+.shop-card-img__container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.shop-card-img__img {
+    width: 100%;
+    height: 100%;
+}
+
+.shop-card-data__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 65px 25px auto 75px;
+    grid-template-areas:
+        "nameProduct"
+        "colorProduct"
+        "."
+        "payBlock";
+}
+
+.shop-card-name {
+    grid-area: nameProduct;
+    font-size: 30px;
+}
+
+.shop-card-color {
+    grid-area: colorProduct;
+}
+
+.shop-card-pay-block {
+    grid-area: payBlock;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 25px;
+}
+
+
+
+.shop-item-container {
+    display: flex;
+    flex-direction: row;
+    height: 75px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background-color: #F5F5F5;
+    padding-right: 15px;
+}
+
+.shop-item-img__container {
+    height: 75px;
+}
+
+.shop-item-img__img {
+    width: 125px;
+    object-fit: cover;
+    object-position: center -40px;
+
+}
+
+.shop-item-name {
+    font-size: 22px;
+}
+
+@media (max-width: 649px) {
+    .shop-item-container {
+        display: grid;
+        grid-template-columns: 125px auto 125px;
+        grid-template-rows: repeat(2, auto);
+        height: 125px;
+        padding: 15px;
+    }
+    .shop-item-name {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+}

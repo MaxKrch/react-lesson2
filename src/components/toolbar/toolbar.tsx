@@ -8,7 +8,8 @@ class Toolbar extends PureComponent<ToolbarProps> {
             <ul className="portfolio-toolbar__container">
                 {
                     this.props.filters.map(filter => (
-                        <ToolbarItem 
+                        <ToolbarItem
+                            key={filter}
                             filter={filter}
                             selected={filter === this.props.selected}
                             onSelectFilter={this.props.onSelectFilter}

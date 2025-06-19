@@ -20,7 +20,7 @@ class Portfolio extends Component<PortfolioProps, PortfolioState> {
       : this.state.projects.filter(item => item.category === this.state.selected)
 
     return (
-      <div className='container'>
+      <div className='portfolio-container'>
         <Toolbar 
           filters={filters}
           selected={this.state.selected}
