@@ -5,7 +5,6 @@ import Dropdown from './components/dropdown';
 
 import { projects, products, menuItems } from './const/';
 
-
 function App() {
   return (
     <div className='container'>
